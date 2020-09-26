@@ -57,7 +57,7 @@ char *new_output_fn = NULL;
 #define OUTPUT_FN		OUTPUT_FILE_PATH "output_file.csv"
 #define NEW_OUTPUT_FN	OUTPUT_FILE_PATH "new_output_file.csv"
 #define DEBUG false
-#define BASE_ITER 10000
+#define BASE_ITER 10
 
 #define PAGE_SIZE 4096
 
@@ -889,7 +889,7 @@ void context_switch_test(struct timespec *diffTime) {
 
 int msg_size = -1;
 int curr_iter_limit = -1;
-#define sock "/TEST_DIR/socket"
+#define sock "/mnt/data/LEBench/TEST_DIR/socket"
 void send_test(struct timespec *timeArray, int iter, int *i) {
 	int retval;
 	int fds1[2], fds2[2];
